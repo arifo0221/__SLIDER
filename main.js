@@ -1,7 +1,8 @@
-const images = document.querySelectorAll(".slide img");
+const images = document.querySelectorAll(".slideshow .slide");
 const prevBtn = document.getElementsByClassName("arrow-left");
 const nextBtn = document.getElementsByClassName("arrow-right");
 
+console.log(images)
 
 function slider() {
   let index = 0;
