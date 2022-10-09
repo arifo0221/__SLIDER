@@ -1,8 +1,7 @@
 const images = document.querySelectorAll(".slideshow .slide");
-const prevBtn = document.getElementsByClassName("arrow-left");
-const nextBtn = document.getElementsByClassName("arrow-right");
+const prevBtn = document.querySelector(".arrow-left");
+const nextBtn = document.querySelector(".arrow-right");
 
-console.log(images)
 
 function slider() {
   let index = 0;
@@ -41,7 +40,8 @@ function slider() {
 
 }
 
-const slide = slider();
+
 
 nextBtn.addEventListener("click", slide.swipeNext);
 prevBtn.addEventListener("click", slide.swipePrev);
+
